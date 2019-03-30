@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+nav {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+nav .title-container {
+  width: 100px;
+}
+
+nav .title-container .logo {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */
