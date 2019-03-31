@@ -46,4 +46,24 @@ main .landing-img .landing-caption {
       align-self: end;
   background-color: darkgrey;
 }
+
+main .main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .main-content h2 {
+  font-size: 1.1em;
+  margin-top: 35px;
+}
+
+main .main-content .posts-container {
+  margin-top: 23px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
 /*# sourceMappingURL=styles.css.map */
