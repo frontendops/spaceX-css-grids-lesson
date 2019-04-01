@@ -6,6 +6,7 @@ $break-small: 420px;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box
 
 nav 
     width: 100vw
@@ -71,6 +72,7 @@ main
         max-width: 900px
         margin: 0 auto
         text-align: center
+        margin-bottom: 50px
         
         h2
             font-size: 1.1em
@@ -78,9 +80,10 @@ main
 
         .posts-container
             margin-top: 23px
-            width: 100%
+            margin: 0 auto
+            max-width: 800px
             display: grid
-            grid-template-columns: 1fr 1fr 1fr
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
             @media only screen and (max-width: $break-small) {
             grid-template-columns: 1fr}
 
@@ -94,7 +97,14 @@ main
         
         img 
             height: 128px
-            width: 256px
+            width: 100%
+        
+        a 
+            
+            color: skyblue
+            text-transform: lowercase
+            float: left
+            
 
 
 

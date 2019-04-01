@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 nav {
@@ -90,6 +92,7 @@ main .main-content {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 main .main-content h2 {
@@ -99,11 +102,12 @@ main .main-content h2 {
 
 main .main-content .posts-container {
   margin-top: 23px;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 @media only screen and (max-width: 420px) {
@@ -126,7 +130,13 @@ main .main-content h3 {
 
 main .main-content img {
   height: 128px;
-  width: 256px;
+  width: 100%;
+}
+
+main .main-content a {
+  color: skyblue;
+  text-transform: lowercase;
+  float: left;
 }
 
 footer {
