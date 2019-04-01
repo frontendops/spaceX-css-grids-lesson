@@ -8,13 +8,18 @@ nav {
   width: 100vw;
   background-color: black;
   color: white;
+  padding: 20px;
+}
+
+nav .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 nav .nav-links {
@@ -63,7 +68,7 @@ main .landing-img {
 
 main .landing-img .landing-caption {
   width: 100%;
-  height: 150px;
+  height: 100px;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -96,7 +101,7 @@ main .main-content .posts-container {
 }
 
 main .main-content .post {
-  padding: 15px;
+  padding: 25px;
   margin: 10px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
@@ -137,5 +142,10 @@ footer .footer-left .social-links li {
   text-transform: uppercase;
   font-size: .8em;
   padding-right: 10px;
+}
+
+footer .copyright {
+  color: lightgrey;
+  font-size: .7em;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -15,17 +15,21 @@
 
     <header>
         <!-- This navbar can use flexbox -->
-        <nav class="navigation">
-            <div class="title-container">
-                <a href="#" class="logo">SpaceX</a>
+        <nav>
+            <div class="nav-container">
+                <div class="title-container">
+                    <!-- adding tab index for list items -->
+                    <a href="#" class="logo">SpaceX</a>
+                </div>
+
+                <ul class="nav-links">
+                    <li tabindex="0">Falcon 9</li>
+                    <li tabindex="0">Falcon Heavy</li>
+                    <li tabindex="0">Dragon</li>
+                    <li tabindex="0">Updates</li>
+                </ul>
             </div>
 
-            <ul class="nav-links">
-                <li>Falcon 9</li>
-                <li>Falcon Heavy</li>
-                <li>Dragon</li>
-                <li>Updates</li>
-            </ul>
         </nav>
     </header>
 
@@ -75,14 +79,14 @@
     <footer>
         <div class="footer-left">
             <ul class="social-links">
-                <li>Twitter</li>
-                <li>Youtube</li>
-                <li>Flickr</li>
-                <li>instagram</li>
+                <li tabindex="0">Twitter</li>
+                <li tabindex="0">Youtube</li>
+                <li tabindex="0">Flickr</li>
+                <li tabindex="0">instagram</li>
             </ul>
         </div>
-        © 2019 SPACE EXPLORATION TECHNOLOGIES CORP.
-        <div>
+        <div class="copyright">
+            © 2019 SPACE EXPLORATION TECHNOLOGIES CORP.
 
         </div>
 
