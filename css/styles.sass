@@ -1,5 +1,6 @@
 $border: 1px solid grey;
 $box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+$break-small: 420px;
     
 * 
     margin: 0;
@@ -8,9 +9,10 @@ $box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 
 nav 
     width: 100vw
+    padding: 10px 0px
     background-color: black
     color: white
-    padding: 20px
+   
 
     .nav-container 
           display: flex
@@ -21,6 +23,9 @@ nav
     .nav-links
         display: flex
         align-items: center
+
+        @media only screen and (max-width: $break-small) 
+            display: none
 
         li 
             padding: 0px 10px
@@ -76,6 +81,8 @@ main
             width: 100%
             display: grid
             grid-template-columns: 1fr 1fr 1fr
+            @media only screen and (max-width: $break-small) {
+            grid-template-columns: 1fr}
 
         .post
             padding: 25px
@@ -101,9 +108,10 @@ footer
 
         .social-links
             display: flex
-           
             align-items: center
             max-width: 400px
+            @media only screen and (max-width: $break-small) 
+               flex-direction: column
 
 
             li
