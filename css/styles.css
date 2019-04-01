@@ -66,4 +66,43 @@ main .main-content .posts-container {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
+
+main .main-content .post {
+  padding: 15px;
+  margin: 10px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+main .main-content h3 {
+  font-size: 1em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px 100px;
+}
+
+footer .footer-left {
+  color: white;
+}
+
+footer .footer-left .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+}
+
+footer .footer-left .social-links li {
+  color: white;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding-right: 10px;
+}
 /*# sourceMappingURL=styles.css.map */
