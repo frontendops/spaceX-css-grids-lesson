@@ -202,6 +202,7 @@ footer .copyright {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .dragon-container .hero-dragon .landing-caption {
@@ -216,6 +217,7 @@ footer .copyright {
 .dragon-container .background-video {
   position: relative;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .dragon-container .background-video video {
@@ -226,17 +228,47 @@ footer .copyright {
 
 .dragon-container .background-video .overlay {
   position: absolute;
-  display: -ms-grid;
-  display: grid;
   top: 0;
   left: 0;
-  -ms-grid-columns: 40% auto;
-      grid-template-columns: 40% auto;
   color: white;
 }
 
-.dragon-container .background-video .overlay .overview-content {
+.dragon-container .background-video .overlay .dragon-title {
+  display: block;
+  width: 100%;
+  border-bottom: 2px dotted grey;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.dragon-container .background-video .overlay .dragon-title h2 {
+  color: white;
+  padding: 15px 0px;
+  font-weight: 400;
+}
+
+.dragon-container .background-video .overlay .dragon-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% auto;
+      grid-template-columns: 45% auto;
+}
+
+.dragon-container .background-video .overlay .dragon-grid .overview-content {
   padding: 25px;
+  font-family: Arial,sans-serif;
+  font-weight: normal;
   line-height: 1.6;
+  text-transform: none;
+}
+
+.dragon-interior-vid {
+  width: 100%;
+}
+
+.dragon-interior-vid iframe {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */

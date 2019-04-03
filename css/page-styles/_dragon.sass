@@ -13,6 +13,7 @@
         background-repeat: no-repeat;
         background-size: cover
         text-align: center
+        margin-bottom: 10px
 
         .landing-caption
             letter-spacing: 2px
@@ -24,6 +25,7 @@
     .background-video
         position: relative
         margin: 0 auto
+        max-width: 1200px
 
         video
             max-width: 1200px
@@ -32,12 +34,40 @@
 
         .overlay
             position: absolute
-            display: grid
+           
             top: 0
             left: 0
-            grid-template-columns: 40% auto
+           
             color: white
 
-            .overview-content
-                padding: 25px
-                line-height: 1.6
+            .dragon-title
+                display: block
+                width: 100%
+                border-bottom: 2px dotted grey
+                text-transform: uppercase
+                font-size: 1.8em
+                
+                h2 
+                    color: white
+                    padding: 15px 0px
+                    font-weight: 400
+                    
+            .dragon-grid
+                display: grid
+                grid-template-columns: 45% auto
+
+                .overview-content
+                    padding: 25px
+                    font-family: Arial,sans-serif;
+                    font-weight: normal;
+                    line-height: 1.6;
+                    text-transform: none;
+
+
+.dragon-interior-vid
+    width: 100%
+
+    iframe
+        width: 100%
+        height: 80vh
+        margin: 0 auto
