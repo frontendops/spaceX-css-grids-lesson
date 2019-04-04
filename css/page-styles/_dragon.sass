@@ -1,7 +1,12 @@
-.dragon-container
-
-    background-color: black
+$mobile: 420px
+$smedium: 650px
+$medium: 1080px
     
+
+.dragon-container
+    background-color: black
+    width: 100vw
+
     .hero-dragon
         width: 100vw
         height: 70vh
@@ -25,19 +30,27 @@
     .background-video
         position: relative
         margin: 0 auto
-        max-width: 1200px
+        width: 1200px
+
+        @media only screen and (max-width: $smedium) 
+            width: 100vw
+            padding-bottom: 450px
 
         video
-            max-width: 1200px
+            width: 100%
             position: relative
             z-index: 0
 
+            @media only screen and (max-width: $smedium) 
+                width: 100%
+                height: 700px
+                margin: 0 auto
+                object-fit: contain
+             
         .overlay
             position: absolute
-           
             top: 0
             left: 0
-           
             color: white
 
             .dragon-title
@@ -46,6 +59,9 @@
                 border-bottom: 2px dotted grey
                 text-transform: uppercase
                 font-size: 1.8em
+
+                @media only screen and (max-width: $smedium) 
+                    font-size: 1.2em
                 
                 h2 
                     color: white
@@ -55,6 +71,8 @@
             .dragon-grid
                 display: grid
                 grid-template-columns: 45% auto
+                @media only screen and (max-width: $smedium) 
+                    grid-template-columns: 1fr
 
                 .overview-content
                     padding: 25px
@@ -62,6 +80,17 @@
                     font-weight: normal;
                     line-height: 1.6;
                     text-transform: none;
+
+                .overview-content:nth-child(4n)
+                    height: 20vh
+                    @media only screen and (max-width: $smedium) 
+                        grid-row: 2
+
+                    @media only screen and (max-width: $smedium) 
+                        padding: 15px
+                        line-height: 1.2
+
+
 
 
 .dragon-interior-vid
@@ -86,6 +115,7 @@
         margin: 0 auto
         height: 75vh
         max-width: 1200px
+        padding: 50px 0px
 
         .suit-content
             height: 100%
@@ -101,6 +131,9 @@
                 padding-left: 25px
                 line-height: 1.8
                 font-size: 1.1em
+                @media only screen and (max-width: $medium) 
+                    font-size: .8em
+                    line-height: 1.6
 
                 ul
                     margin-left: 15px
