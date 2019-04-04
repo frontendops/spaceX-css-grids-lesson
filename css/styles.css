@@ -374,4 +374,38 @@ footer .copyright {
 .suit-container .suit-background .suit-content .suit-info ul li {
   margin-top: 10px;
 }
+
+.dragon-img-container {
+  height: 75vh;
+}
+
+.dragon-img-container .dragon-shuttle-image {
+  background-image: url("https://images.unsplash.com/photo-1517976547714-720226b864c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
+  height: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.dragon-img-container .dragon-shuttle-image .dragon-caption-container {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  background: black;
+  opacity: .6;
+  color: white;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.dragon-img-container .dragon-shuttle-image .dragon-caption-container p {
+  font-size: 1.2em;
+}
 /*# sourceMappingURL=styles.css.map */
