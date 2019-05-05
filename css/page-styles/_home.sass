@@ -1,0 +1,25 @@
+.page-footer 
+    background-color: black;
+    color: white
+    padding: 15px 100px
+
+    &__left 
+        color: white
+
+    &__links
+        display: flex
+        align-items: center
+        max-width: 400px
+        @media only screen and (max-width: $break-small) 
+            flex-direction: column
+
+        li
+            color: white
+            list-style: none
+            text-transform: uppercase
+            font-size: .8em
+            padding-right: 10px
+    
+    &__copyright
+        color: lightgrey
+        font-size: .7em

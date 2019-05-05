@@ -1,97 +1,96 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Grids and layout lesson</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<body>
-
+  <body>
     <!-- CSS grids are two dimensional -->
     <!-- CSS flexbox is one dimensional -->
 
     <header>
-        <!-- This navbar can use flexbox -->
-        <nav>
-            <div class="nav-container">
-                <div class="title-container">
-                    <!-- adding tab index for list items -->
-                    <a href="#" class="logo">SpaceX</a>
-                </div>
+      <!-- This navbar can use flexbox -->
+      <nav>
+        <div class="nav-container">
+          <div class="title-container">
+            <!-- adding tab index for list items -->
+            <a href="#" class="logo">SpaceX</a>
+          </div>
 
-                <ul class="nav-links">
-                    <li tabindex="0">Falcon 9</li>
-                    <li tabindex="0">Falcon Heavy</li>
-                    <li tabindex="0"> <a href="dragon.html">Dragon</a> </li>
-                    <li tabindex="0">Updates</li>
-                </ul>
-            </div>
-
-        </nav>
+          <ul class="nav-links">
+            <li tabindex="0">Falcon 9</li>
+            <li tabindex="0">Falcon Heavy</li>
+            <li tabindex="0"><a href="dragon.html">Dragon</a></li>
+            <li tabindex="0">Updates</li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- our first grid -->
 
     <main class="container">
+      <section class="landing-img">
+        <div class="landing-caption">
+          <h1>Crew Demo-1 mission</h1>
+        </div>
+      </section>
 
-        <section class="landing-img">
-            <div class="landing-caption">
-                <h1>Crew Demo-1 mission</h1>
-            </div>
-        </section>
+      <section class="main-content">
+        <h2>
+          SPACEX DESIGNS, MANUFACTURES AND LAUNCHES ADVANCED ROCKETS AND
+          SPACECRAFT
+        </h2>
 
-        <section class="main-content">
-            <h2>SPACEX DESIGNS, MANUFACTURES AND LAUNCHES ADVANCED ROCKETS AND SPACECRAFT</h2>
+        <!-- this will be a grid to!! -->
+        <div class="posts-container">
+          <div class="post">
+            <img
+              src="https://images.unsplash.com/photo-1517976547714-720226b864c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt=""
+            />
+            <h3>
+              REUSABILITY: WORLD’S FIRST REFLIGHT OF AN ORBITAL CLASS ROCKET
+            </h3>
+            <a href="#">LEARN MORE</a>
+          </div>
 
-            <!-- this will be a grid to!! -->
-            <div class="posts-container">
+          <div class="post">
+            <img
+              src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt=""
+            />
+            <h3>COMMERCIAL CREW: TAKING AMERICA’S ASTRONAUTS TO SPACE</h3>
+            <a href="#">LEARN MORE</a>
+          </div>
 
-                <div class="post">
-                    <img src="https://images.unsplash.com/photo-1517976547714-720226b864c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                        alt="">
-                    <h3>REUSABILITY: WORLD’S FIRST REFLIGHT OF AN ORBITAL CLASS ROCKET</h3>
-                    <a href="#">LEARN MORE</a>
-                </div>
-
-                <div class="post">
-                    <img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                        alt="">
-                    <h3>COMMERCIAL CREW: TAKING AMERICA’S ASTRONAUTS TO SPACE</h3>
-                    <a href="#">LEARN MORE</a>
-                </div>
-
-                <div class="post">
-                    <img src="https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
-                        alt="">
-                    <h3>MAKING LIFE MULTIPLANETARY</h3>
-                    <a href="#">LEARN MORE</a>
-                </div>
-
-            </div>
-        </section>
-
-
+          <div class="post">
+            <img
+              src="https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80"
+              alt=""
+            />
+            <h3>MAKING LIFE MULTIPLANETARY</h3>
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <div class="footer-left">
-            <ul class="social-links">
-                <li tabindex="0">Twitter</li>
-                <li tabindex="0">Youtube</li>
-                <li tabindex="0">Flickr</li>
-                <li tabindex="0">instagram</li>
-            </ul>
-        </div>
-        <div class="copyright">
-            © 2019 SPACE EXPLORATION TECHNOLOGIES CORP.
-
-        </div>
-
+    <footer class="page-footer">
+      <div class="page-footer__left">
+        <ul class="page-footer__links">
+          <li tabindex="0">Twitter</li>
+          <li tabindex="0">Youtube</li>
+          <li tabindex="0">Flickr</li>
+          <li tabindex="0">instagram</li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        © 2019 SPACE EXPLORATION TECHNOLOGIES CORP.
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
