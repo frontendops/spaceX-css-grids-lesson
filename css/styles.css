@@ -103,11 +103,11 @@ main .main-content h2 {
 main .main-content .posts-container {
   margin-top: 23px;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1200px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(auto, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
 }
 
 @media only screen and (max-width: 420px) {
@@ -122,6 +122,9 @@ main .main-content .post {
   margin: 10px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .main-content h3 {
@@ -129,8 +132,8 @@ main .main-content h3 {
 }
 
 main .main-content img {
-  height: 128px;
-  width: 100%;
+  height: 150px;
+  max-width: 250px;
 }
 
 main .main-content a {

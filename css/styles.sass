@@ -81,9 +81,9 @@ main
         .posts-container
             margin-top: 23px
             margin: 0 auto
-            max-width: 800px
+            max-width: 1200px
             display: grid
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+            grid-template-columns: repeat(auto-fill, minmax(auto, 1fr))
             @media only screen and (max-width: $break-small) {
             grid-template-columns: 1fr}
 
@@ -91,13 +91,15 @@ main
             padding: 25px
             margin: 10px
             box-shadow: $box-shadow
+            display: flex;
+            
         
         h3
             font-size: 1em
         
         img 
-            height: 128px
-            width: 100%
+            height: 150px
+            max-width: 250px
         
         a 
             
