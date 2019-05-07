@@ -89,7 +89,7 @@ main .landing-img .landing-caption h1 {
 }
 
 main .main-content {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
@@ -101,20 +101,9 @@ main .main-content h2 {
 }
 
 main .main-content .posts-container {
+  max-width: 1200px;
   margin-top: 23px;
   margin: 0 auto;
-  max-width: 1200px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(auto, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
-}
-
-@media only screen and (max-width: 420px) {
-  main .main-content .posts-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
 }
 
 main .main-content .post {
@@ -125,6 +114,14 @@ main .main-content .post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .main-content h3 {
