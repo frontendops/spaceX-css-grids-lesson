@@ -32,7 +32,13 @@ nav
             padding: 0px 10px
             list-style: none
             text-transform: uppercase
+            text-decoration-style: none;
 
+            &:hover
+                border-bottom: 3px solid purple;
+
+            a
+                color: white;
 
     .title-container 
         width: 100px
@@ -82,14 +88,16 @@ main
             max-width: 1200px
             margin-top: 23px
             margin: 0 auto
-        .post
-            padding: 25px
-            margin: 10px
-            box-shadow: $box-shadow
-            display: flex;
-            flex-wrap: wrap
-            justify-content: space-between
-            align-items: center
+
+            .post
+                padding: 25px
+                margin: 10px
+                width: 100%
+                box-shadow: $box-shadow
+                display: flex;
+                flex-wrap: wrap
+                justify-content: space-between
+                align-items: center
             
         
         h3

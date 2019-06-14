@@ -43,6 +43,16 @@ nav .nav-links li {
   padding: 0px 10px;
   list-style: none;
   text-transform: uppercase;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+}
+
+nav .nav-links li:hover {
+  border-bottom: 3px solid purple;
+}
+
+nav .nav-links li a {
+  color: white;
 }
 
 nav .title-container {
@@ -106,9 +116,10 @@ main .main-content .posts-container {
   margin: 0 auto;
 }
 
-main .main-content .post {
+main .main-content .posts-container .post {
   padding: 25px;
   margin: 10px;
+  width: 100%;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
   display: -webkit-box;
